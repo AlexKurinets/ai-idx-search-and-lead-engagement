@@ -105,7 +105,8 @@ jobs:
         run: docker compose up --build -d
       - name: Wait for the seed to finish
         run: |
-          code=$(timeout 1200 docker compose wait seed)
+          timeout 1200 docker compose wait seed || true
+          code=$(docker inspect -f '{{.State.ExitCode}}' "$(docker compose ps -aq seed)")
           echo "seed exited with $code"
           docker compose logs --no-log-prefix seed | grep '\[seed\]'
           test "$code" = "0"
