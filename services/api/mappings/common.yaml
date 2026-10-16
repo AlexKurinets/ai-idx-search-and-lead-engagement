@@ -1,0 +1,65 @@
+# Canonical listing model shared by every market. Each MLS file extends this and
+# overrides only what its feed does differently. Field values are RESO Data
+# Dictionary names unless a market says otherwise.
+fields:
+  listing_key: ListingKey
+  listing_id: ListingId
+  status: { from: StandardStatus, lookup: status }
+  property_sub_type: { from: PropertySubType, lookup: sub_type }
+  list_price: { from: ListPrice, type: integer }
+  original_list_price: { from: OriginalListPrice, type: integer }
+  close_price: { from: ClosePrice, type: integer }
+  close_date: CloseDate
+  beds: { from: BedroomsTotal, type: integer }
+  baths: { sum: [{ from: BathroomsFull }, { from: BathroomsHalf, weight: 0.5 }] }
+  living_area_sqft: { from: LivingArea, type: integer }
+  lot_acres: { from: LotSizeAcres, type: number }
+  year_built: { from: YearBuilt, type: integer }
+  address_line: UnparsedAddress
+  city: City
+  subdivision: SubdivisionName
+  lat: { from: Latitude, type: number }
+  lon: { from: Longitude, type: number }
+  remarks: PublicRemarks
+  idx_entire: { from: InternetEntireListingDisplayYN, type: boolean, default: true }
+  idx_address: { from: InternetAddressDisplayYN, type: boolean, default: true }
+  list_office_name: ListOfficeName
+  list_agent_name: ListAgentFullName
+  photos_count: { from: PhotosCount, type: integer }
+  association_fee: { from: AssociationFee, type: integer }
+  original_entry_ts: OriginalEntryTimestamp
+  modification_ts: ModificationTimestamp
+  price_change_ts: PriceChangeTimestamp
+  status_change_ts: StatusChangeTimestamp
+
+lookups:
+  status:
+    Active: Active
+    ActiveUnderContract: ActiveUnderContract
+    Pending: Pending
+    Closed: Closed
+    ComingSoon: ComingSoon
+    Withdrawn: Withdrawn
+    Expired: Expired
+    Canceled: Canceled
+  sub_type:
+    SingleFamilyResidence: single_family
+    Condominium: condo
+    Townhouse: townhouse
+
+features:
+  pool: { from: PoolPrivateYN, equals: true }
+  fireplace: { from: FireplaceYN, equals: true }
+  garage: { from: GarageSpaces, gte: 1 }
+  waterfront: { from: WaterfrontYN, equals: true }
+  river_view: { from: View, contains: River }
+  park_view: { from: View, contains: Park }
+  hardwood: { from: InteriorFeatures, contains: Hardwood Floors }
+  updated_kitchen: { from: InteriorFeatures, contains: Updated Kitchen }
+  kitchen_island: { from: InteriorFeatures, contains: Kitchen Island }
+  open_floorplan: { from: InteriorFeatures, contains: Open Floorplan }
+  home_office: { from: InteriorFeatures, contains: Home Office }
+  large_yard: { any: [{ from: ExteriorFeatures, contains: Private Yard }, { from: LotSizeAcres, gte: 0.25 }] }
+  deck: { from: ExteriorFeatures, contains: Deck }
+  finished_basement: { from: Basement, contains: Finished }
+  solar: { from: GreenEnergyGeneration, contains: Solar }

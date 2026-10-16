@@ -1,0 +1,3 @@
+# Ellery Coast MLS sends Data Dictionary names and enumerations as published.
+mls: ECM
+extends: common

@@ -1,0 +1,12 @@
+# Brannock Valley MLS sends enumeration display names, prices as decimal strings,
+# and the neighborhood in a local field.
+mls: BVM
+extends: common
+fields:
+  subdivision: BVM_NeighborhoodName
+lookups:
+  status:
+    Active Under Contract: ActiveUnderContract
+    Coming Soon: ComingSoon
+  sub_type:
+    Single Family Residence: single_family

@@ -1,0 +1,111 @@
+{"q": "3 bed under 600k near the river with a yard", "markets": ["ECM"], "expect": {"beds_min": 3, "price_max": 600000, "features": ["large_yard"], "location": "ecm-ellery-river"}}
+{"q": "3 bed 2 bath under $500,000 in Old Quay", "markets": ["ECM"], "expect": {"beds_min": 3, "baths_min": 2.0, "price_max": 500000, "location": "ecm-old-quay"}}
+{"q": "condo or townhouse between 300k and 450k downtown", "markets": ["ECM"], "expect": {"property_types": ["condo", "townhouse"], "price_min": 300000, "price_max": 450000, "location": "ecm-seaglass-heights"}}
+{"q": "4br 3ba house with pool and 2 car garage", "markets": ["ECM"], "expect": {"beds_min": 4, "baths_min": 3.0, "property_types": ["single_family"], "features": ["pool", "garage"]}}
+{"q": "new listings in Saltmarsh under 700", "markets": ["ECM"], "expect": {"max_days_on_market": 7, "price_max": 700000, "location": "ecm-saltmarsh"}}
+{"q": "bright 2 bedroom condo with river views", "markets": ["ECM"], "expect": {"beds_min": 2, "property_types": ["condo"], "features": ["river_view"], "keywords": ["natural light"]}}
+{"q": "3/2 around 550k with open floor plan", "markets": ["ECM"], "expect": {"beds_min": 3, "baths_min": 2.0, "price_min": 495000, "price_max": 605000, "features": ["open_floorplan"]}}
+{"q": "homes over 2000 sq ft with a home office cheapest first", "markets": ["ECM"], "expect": {"sqft_min": 2000, "features": ["home_office"], "sort": "price_asc"}}
+{"q": "2 bedroom condo under 350k", "markets": ["ECM"], "expect": {"beds_min": 2, "property_types": ["condo"], "price_max": 350000}}
+{"q": "single family home in Gullwing with a fireplace", "markets": ["ECM"], "expect": {"property_types": ["single_family"], "location": "ecm-gullwing", "features": ["fireplace"]}}
+{"q": "townhouse near Lantern Row Park", "markets": ["ECM"], "expect": {"property_types": ["townhouse"], "location": "ecm-lantern-row-park"}}
+{"q": "homes in Lantern Row under 800k", "markets": ["ECM"], "expect": {"location": "ecm-lantern-row", "price_max": 800000}}
+{"q": "waterfront homes in Port Ellery", "markets": ["ECM"], "expect": {"features": ["waterfront"], "location": "ECM"}}
+{"q": "house on the river with a dock", "markets": ["ECM"], "expect": {"property_types": ["single_family"], "features": ["waterfront"]}}
+{"q": "5 bedroom house with finished basement and big backyard", "markets": ["ECM"], "expect": {"beds_min": 5, "property_types": ["single_family"], "features": ["finished_basement", "large_yard"]}}
+{"q": "studio condo downtown", "markets": ["ECM"], "expect": {"beds_min": 0, "property_types": ["condo"], "location": "ecm-seaglass-heights"}}
+{"q": "price drops in Cobble Point", "markets": ["ECM"], "expect": {"sort": "price_drop", "location": "ecm-cobble-point"}}
+{"q": "newest listings with solar panels", "markets": ["ECM"], "expect": {"sort": "newest", "features": ["solar"]}}
+{"q": "3+ beds 2+ baths max 650k", "markets": ["ECM"], "expect": {"beds_min": 3, "baths_min": 2.0, "price_max": 650000}}
+{"q": "at least 4 bedrooms under 1.2m", "markets": ["ECM"], "expect": {"beds_min": 4, "price_max": 1200000}}
+{"q": "homes between $400,000 and $525,000 in Driftwood", "markets": ["ECM"], "expect": {"price_min": 400000, "price_max": 525000, "location": "ecm-driftwood"}}
+{"q": "over 500k with a pool", "markets": ["ECM"], "expect": {"price_min": 500000, "features": ["pool"]}}
+{"q": "hardwood floors and an updated kitchen near Gullwing Commons", "markets": ["ECM"], "expect": {"features": ["hardwood", "updated_kitchen"], "location": "ecm-gullwing-commons"}}
+{"q": "3 bedroom townhome with a garage in Netmakers", "markets": ["ECM"], "expect": {"beds_min": 3, "property_types": ["townhouse"], "features": ["garage"], "location": "ecm-netmakers"}}
+{"q": "quiet street, 3 beds, big yard, under 600", "markets": ["ECM"], "expect": {"beds_min": 3, "features": ["large_yard"], "price_max": 600000, "keywords": ["quiet street"]}}
+{"q": "move-in ready condo with a deck", "markets": ["ECM"], "expect": {"property_types": ["condo"], "features": ["deck"], "keywords": ["move-in ready"]}}
+{"q": "2 bed 1 bath under 300k in Anchor Flats", "markets": ["ECM"], "expect": {"beds_min": 2, "baths_min": 1.0, "price_max": 300000, "location": "ecm-anchor-flats"}}
+{"q": "homes listed in the last 3 days in Kelp Hollow", "markets": ["ECM"], "expect": {"max_days_on_market": 3, "location": "ecm-kelp-hollow"}}
+{"q": "coming soon in Pilot's Rise", "markets": ["ECM"], "expect": {"statuses": ["ComingSoon"], "location": "ecm-pilots-rise"}}
+{"q": "including pending homes in Tidewater Park under 900k", "markets": ["ECM"], "expect": {"statuses": ["Active", "ComingSoon", "ActiveUnderContract", "Pending"], "location": "ecm-tidewater-park", "price_max": 900000}}
+{"q": "four bedroom house with three baths", "markets": ["ECM"], "expect": {"beds_min": 4, "baths_min": 3.0, "property_types": ["single_family"]}}
+{"q": "1.5 bath condo near the water", "markets": ["ECM"], "expect": {"baths_min": 1.5, "property_types": ["condo"], "location": "ecm-ellery-river"}}
+{"q": "condos under $400k with a kitchen island", "markets": ["ECM"], "expect": {"property_types": ["condo"], "price_max": 400000, "features": ["kitchen_island"]}}
+{"q": "most expensive homes in Seaglass Heights", "markets": ["ECM"], "expect": {"sort": "price_desc", "location": "ecm-seaglass-heights"}}
+{"q": "3 bed with a yard for my dog under 550k", "markets": ["ECM"], "expect": {"beds_min": 3, "features": ["large_yard"], "price_max": 550000}}
+{"q": "open concept home with lots of natural light", "markets": ["ECM"], "expect": {"features": ["open_floorplan"], "keywords": ["natural light"]}}
+{"q": "safe neighborhood with good schools 3 bed", "markets": ["ECM"], "expect": {"beds_min": 3, "location": null, "keywords": []}, "notices": ["fair_housing"]}
+{"q": "family friendly area 4 bedroom under 700k", "markets": ["ECM"], "expect": {"beds_min": 4, "price_max": 700000, "keywords": []}, "notices": ["fair_housing"]}
+{"q": "low crime neighborhood near downtown", "markets": ["ECM"], "expect": {"location": "ecm-seaglass-heights", "keywords": []}, "notices": ["fair_housing"]}
+{"q": "2 car garage and a fireplace in Old Quay under 750k", "markets": ["ECM"], "expect": {"features": ["garage", "fireplace"], "location": "ecm-old-quay", "price_max": 750000}}
+{"q": "craftsman with lots of character near Lantern Row Park", "markets": ["ECM"], "expect": {"location": "ecm-lantern-row-park", "keywords": ["craftsman", "charming"]}}
+{"q": "cozy cottage with a garden", "markets": ["ECM"], "expect": {"features": ["large_yard"], "keywords": ["charming", "cottage"]}}
+{"q": "house with parking and a patio for entertaining", "markets": ["ECM"], "expect": {"property_types": ["single_family"], "features": ["garage", "deck"]}}
+{"q": "home office and fast commute", "markets": ["ECM"], "expect": {"features": ["home_office"], "keywords": ["fast", "commute"]}}
+{"q": "3 bed 2.5 bath townhouse with hoa under 300", "markets": ["ECM"], "expect": {"beds_min": 3, "baths_min": 2.5, "property_types": ["townhouse"], "price_max": 300000}}
+{"q": "under 450k", "markets": ["ECM"], "expect": {"price_max": 450000}}
+{"q": "500k", "markets": ["ECM"], "expect": {"price_max": 500000}}
+{"q": "$725,000 max 4 bed", "markets": ["ECM"], "expect": {"price_max": 725000, "beds_min": 4}}
+{"q": "3 bedrooms 600k-700k", "markets": ["ECM"], "expect": {"beds_min": 3, "price_min": 600000, "price_max": 700000}}
+{"q": "from 350k to 425k condo", "markets": ["ECM"], "expect": {"price_min": 350000, "price_max": 425000, "property_types": ["condo"]}}
+{"q": "at least 1800 square feet under 650k", "markets": ["ECM"], "expect": {"sqft_min": 1800, "price_max": 650000}}
+{"q": "2,500 sqft house with pool", "markets": ["ECM"], "expect": {"sqft_min": 2500, "property_types": ["single_family"], "features": ["pool"]}}
+{"q": "homes with river views in Saltmarsh", "markets": ["ECM"], "expect": {"features": ["river_view"], "location": "ecm-saltmarsh"}}
+{"q": "park views near Gullwing Commons", "markets": ["ECM"], "expect": {"features": ["park_view"], "location": "ecm-gullwing-commons"}}
+{"q": "walkable condo close to shops and cafes", "markets": ["ECM"], "expect": {"property_types": ["condo"], "keywords": ["close to shops"]}}
+{"q": "low maintenance townhouse", "markets": ["ECM"], "expect": {"property_types": ["townhouse"], "keywords": ["low-maintenance"]}}
+{"q": "detached house with wood floors under 900k", "markets": ["ECM"], "expect": {"property_types": ["single_family"], "features": ["hardwood"], "price_max": 900000}}
+{"q": "3 bed in Millrace under 350k", "markets": ["BVM"], "expect": {"beds_min": 3, "location": "bvm-millrace", "price_max": 350000}}
+{"q": "homes near the river in Brannock Falls", "markets": ["BVM"], "expect": {"location": "bvm-brannock-river"}}
+{"q": "condo downtown Brannock Falls", "markets": ["BVM"], "expect": {"property_types": ["condo"], "location": "bvm-ironbridge"}}
+{"q": "4 bed house in Hollis Park", "markets": ["BVM"], "expect": {"beds_min": 4, "property_types": ["single_family"], "location": "bvm-hollis-park"}}
+{"q": "homes near Hollis Park Green with a fireplace", "markets": ["BVM"], "expect": {"location": "bvm-hollis-park-green", "features": ["fireplace"]}}
+{"q": "ranch with a big lot in Thornbury", "markets": ["BVM"], "expect": {"features": ["large_yard"], "location": "bvm-thornbury", "keywords": ["ranch"]}}
+{"q": "townhouses in Weir Street between 200k and 280k", "markets": ["BVM"], "expect": {"property_types": ["townhouse"], "location": "bvm-weir-street", "price_min": 200000, "price_max": 280000}}
+{"q": "cheapest 3 bedroom in Copperleaf", "markets": ["BVM"], "expect": {"sort": "price_asc", "beds_min": 3, "location": "bvm-copperleaf"}}
+{"q": "2 bed condo near Oxbow Meadow", "markets": ["BVM"], "expect": {"beds_min": 2, "property_types": ["condo"], "location": "bvm-oxbow-meadow"}}
+{"q": "homes in Oxbow with a deck", "markets": ["BVM"], "expect": {"location": "bvm-oxbow", "features": ["deck"]}}
+{"q": "Upper Falls 3 bed 2 bath", "markets": ["BVM"], "expect": {"location": "bvm-upper-falls", "beds_min": 3, "baths_min": 2.0}}
+{"q": "new on the market in Kettle Green", "markets": ["BVM"], "expect": {"max_days_on_market": 7, "location": "bvm-kettle-green"}}
+{"q": "house in Sawmill Row with a basement under 400k", "markets": ["BVM"], "expect": {"property_types": ["single_family"], "location": "bvm-sawmill-row", "features": ["finished_basement"], "price_max": 400000}}
+{"q": "Linden Cross condos under 250k", "markets": ["BVM"], "expect": {"location": "bvm-linden-cross", "property_types": ["condo"], "price_max": 250000}}
+{"q": "Ferris Bend homes with solar", "markets": ["BVM"], "expect": {"location": "bvm-ferris-bend", "features": ["solar"]}}
+{"q": "3 bed near downtown Quillmont under 800k", "markets": ["HMR"], "expect": {"beds_min": 3, "location": "hmr-old-town", "price_max": 800000}}
+{"q": "homes in Juniper Flats with a view", "markets": ["HMR"], "expect": {"location": "hmr-juniper-flats", "keywords": ["views"]}}
+{"q": "near the creek in Quillmont", "markets": ["HMR"], "expect": {"location": "hmr-quill-creek"}}
+{"q": "Red Ledge 4 bedroom with a 3 car garage", "markets": ["HMR"], "expect": {"location": "hmr-red-ledge", "beds_min": 4, "features": ["garage"]}}
+{"q": "condo in Sunstone under 450k", "markets": ["HMR"], "expect": {"location": "hmr-sunstone", "property_types": ["condo"], "price_max": 450000}}
+{"q": "homes near Bluebird Park Reserve", "markets": ["HMR"], "expect": {"location": "hmr-bluebird-park-reserve"}}
+{"q": "Bluebird Park 3 bed", "markets": ["HMR"], "expect": {"location": "hmr-bluebird-park", "beds_min": 3}}
+{"q": "Aspen Draw Trailhead area homes with a deck", "markets": ["HMR"], "expect": {"location": "hmr-aspen-draw-trailhead", "features": ["deck"]}}
+{"q": "Pinon Ridge house with mature trees and a yard", "markets": ["HMR"], "expect": {"location": "hmr-pinon-ridge", "property_types": ["single_family"], "features": ["large_yard"], "keywords": ["mature trees"]}}
+{"q": "Coyote Wash 2 bed townhome", "markets": ["HMR"], "expect": {"location": "hmr-coyote-wash", "beds_min": 2, "property_types": ["townhouse"]}}
+{"q": "Shale Point homes over 1m", "markets": ["HMR"], "expect": {"location": "hmr-shale-point", "price_min": 1000000}}
+{"q": "Canyon Gate under 1.5 million with a pool", "markets": ["HMR"], "expect": {"location": "hmr-canyon-gate", "price_max": 1500000, "features": ["pool"]}}
+{"q": "Quarry Hill fixer under 500k", "markets": ["HMR"], "expect": {"location": "hmr-quarry-hill", "price_max": 500000, "keywords": ["fixer"]}}
+{"q": "Sagebrush 3 bed with home office and solar", "markets": ["HMR"], "expect": {"location": "hmr-sagebrush", "beds_min": 3, "features": ["home_office", "solar"]}}
+{"q": "modern condo with views in Old Town", "markets": ["HMR"], "expect": {"location": "hmr-old-town", "property_types": ["condo"], "keywords": ["updated", "views"]}}
+{"q": "something spacious near the river", "markets": ["ECM"], "expect": {"location": "ecm-ellery-river", "keywords": ["spacious"]}}
+{"q": "roomy house with a big kitchen", "markets": ["ECM"], "expect": {"property_types": ["single_family"], "keywords": ["spacious"]}}
+{"q": "3 bd 2 ba", "markets": ["ECM"], "expect": {"beds_min": 3, "baths_min": 2.0}}
+{"q": "two bedroom condo with in-ground pool", "markets": ["ECM"], "expect": {"beds_min": 2, "property_types": ["condo"], "features": ["pool"]}}
+{"q": "under 600k no HOA 3 bed", "markets": ["ECM"], "expect": {"price_max": 600000, "beds_min": 3}}
+{"q": "homes close to downtown with a garage under 1m", "markets": ["ECM"], "expect": {"location": "ecm-seaglass-heights", "features": ["garage"], "price_max": 1000000}}
+{"q": "3 bedroom near Gullwing with views of the river", "markets": ["ECM"], "expect": {"beds_min": 3, "location": "ecm-gullwing", "features": ["river_view"]}}
+{"q": "homes with a private yard and deck in Driftwood under 650k", "markets": ["ECM"], "expect": {"features": ["large_yard", "deck"], "location": "ecm-driftwood", "price_max": 650000}}
+{"q": "christian neighborhood 3 bed", "markets": ["ECM"], "expect": {"beds_min": 3, "keywords": []}, "notices": ["fair_housing"]}
+{"q": "near a church with 4 bedrooms", "markets": ["ECM"], "expect": {"beds_min": 4, "keywords": []}, "notices": ["fair_housing"]}
+{"q": "3 bdrm w/ pool under 600k", "markets": ["ECM"], "expect": {"beds_min": 3, "features": ["pool"], "price_max": 600000}}
+{"q": "condo/townhome sub 400k", "markets": ["ECM"], "expect": {"property_types": ["condo", "townhouse"], "price_max": 400000}}
+{"q": "not a condo, 3 beds", "markets": ["ECM"], "expect": {"beds_min": 3, "property_types": []}}
+{"q": "something under half a mil", "markets": ["ECM"], "expect": {"price_max": 500000}}
+{"q": "between three and four hundred thousand", "markets": ["ECM"], "expect": {"price_min": 300000, "price_max": 400000}}
+{"q": "3br near water under 750", "markets": ["ECM"], "expect": {"beds_min": 3, "location": "ecm-ellery-river", "price_max": 750000}}
+{"q": "big house with lots of bedrooms", "markets": ["ECM"], "expect": {"property_types": ["single_family"], "beds_min": 4}}
+{"q": "homes by the park in Gullwing", "markets": ["ECM"], "expect": {"location": "ecm-gullwing"}}
+{"q": "room for my boat near the river", "markets": ["ECM"], "expect": {"location": "ecm-ellery-river"}}
+{"q": "3 bed 2 bath in old quay under 525", "markets": ["ECM"], "expect": {"beds_min": 3, "baths_min": 2.0, "location": "ecm-old-quay", "price_max": 525000}}
+{"q": "sea glass heights condo", "markets": ["ECM"], "expect": {"location": "ecm-seaglass-heights", "property_types": ["condo"]}}
+{"q": "saltmrsh 3 bed", "markets": ["ECM"], "expect": {"location": "ecm-saltmarsh", "beds_min": 3}}
+{"q": "pet friendly condo with gym", "markets": ["ECM"], "expect": {"property_types": ["condo"], "keywords": ["gym", "pet friendly"]}}
+{"q": "under 400 thousand dollars 2 bed", "markets": ["ECM"], "expect": {"price_max": 400000, "beds_min": 2}}

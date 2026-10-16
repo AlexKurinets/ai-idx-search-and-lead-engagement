@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --page: #f9f9f7;
+  --surface: #fcfcfb;
+  --raised: #ffffff;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --muted: #706e69;
+  --line: #e1e0d9;
+  --baseline: #c3c2b7;
+  --accent: #0f766e;
+  --accent-ink: #ffffff;
+  --accent-soft: #e6f2f0;
+  --good: #006300;
+  --warn: #8a5a00;
+  --bad: #b42323;
+  --series-1: #2a78d6;
+  --ord-1: #86b6ef;
+  --ord-2: #5598e7;
+  --ord-3: #2a78d6;
+  --ord-4: #1c5cab;
+  --map-bg: #eef0ec;
+  --map-hood: #dfe4dc;
+  --map-line: #b9c0b5;
+  --map-water: #7fb3e6;
+  --map-park: #cfe5c6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --page: #0d0d0d;
+    --surface: #1a1a19;
+    --raised: #222220;
+    --ink: #f0efec;
+    --ink-2: #c3c2b7;
+    --muted: #9a988f;
+    --line: #2c2c2a;
+    --baseline: #383835;
+    --accent: #2dd4bf;
+    --accent-ink: #062b27;
+    --accent-soft: #10302c;
+    --good: #0ca30c;
+    --warn: #fab219;
+    --bad: #e66767;
+    --series-1: #3987e5;
+    --ord-1: #184f95;
+    --ord-2: #256abf;
+    --ord-3: #3987e5;
+    --ord-4: #6da7ec;
+    --map-bg: #161816;
+    --map-hood: #20241f;
+    --map-line: #3a4038;
+    --map-water: #2c5d8f;
+    --map-park: #22361f;
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --page: #0d0d0d;
+  --surface: #1a1a19;
+  --raised: #222220;
+  --ink: #f0efec;
+  --ink-2: #c3c2b7;
+  --muted: #9a988f;
+  --line: #2c2c2a;
+  --baseline: #383835;
+  --accent: #2dd4bf;
+  --accent-ink: #062b27;
+  --accent-soft: #10302c;
+  --good: #0ca30c;
+  --warn: #fab219;
+  --bad: #e66767;
+  --series-1: #3987e5;
+  --ord-1: #184f95;
+  --ord-2: #256abf;
+  --ord-3: #3987e5;
+  --ord-4: #6da7ec;
+  --map-bg: #161816;
+  --map-hood: #20241f;
+  --map-line: #3a4038;
+  --map-water: #2c5d8f;
+  --map-park: #22361f;
+}
+
+html,
+body {
+  background: var(--page);
+  color: var(--ink);
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.card {
+  @apply rounded-xl border border-line bg-surface;
+}
+
+.chip {
+  @apply inline-flex items-center gap-1 whitespace-nowrap rounded-full border border-line bg-raised px-3 py-1 text-sm text-ink;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-accent-ink disabled:opacity-50;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-line bg-raised px-3 py-2 text-sm font-medium text-ink hover:bg-page disabled:opacity-50;
+}
+
+.input {
+  @apply w-full rounded-lg border border-line bg-raised px-3 py-2 text-ink placeholder:text-muted focus:border-accent focus:outline-none;
+}
+
+.label {
+  @apply text-xs font-semibold uppercase tracking-wide text-muted;
+}
+
+.maplibregl-ctrl-attrib {
+  display: none;
+}
+
+.map-marker {
+  pointer-events: auto;
+}

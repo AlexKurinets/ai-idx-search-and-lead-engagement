@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.next/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.env
+*.tsbuildinfo
+*.egg-info/
+build/

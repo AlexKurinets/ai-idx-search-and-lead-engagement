@@ -1,0 +1,10 @@
+# High Mesa Regional MLS omits LivingArea (a local finished-square-feet field instead)
+# and spells Townhouse as "Townhome". It also sends a non-standard "Contingent" status,
+# which is deliberately not mapped here so it shows up in mapping_issues for review.
+mls: HMR
+extends: common
+fields:
+  living_area_sqft: { from: HMR_TotalFinishedSqFt, type: integer }
+lookups:
+  sub_type:
+    Townhome: townhouse

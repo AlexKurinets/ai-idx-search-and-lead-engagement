@@ -1,0 +1,35 @@
+[project]
+name = "idx-ai"
+version = "1.0.0"
+description = "AI services: natural-language search parsing, the texting agent and its Temporal workflows, relationship scoring and validated neighborhood reports"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.115.6",
+  "uvicorn[standard]==0.34.0",
+  "pydantic==2.10.4",
+  "httpx==0.28.1",
+  "temporalio==1.9.0",
+]
+
+[project.optional-dependencies]
+openai = ["openai==1.59.7"]
+dev = ["pytest==8.3.4", "pytest-asyncio==0.25.2", "ruff==0.8.6"]
+
+[tool.setuptools]
+packages = ["app"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 140
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["B905", "UP038"]
+
+[tool.ruff.lint.per-file-ignores]
+"evals/build_eval_set.py" = ["E501"]
