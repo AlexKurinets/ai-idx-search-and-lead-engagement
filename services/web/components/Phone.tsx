@@ -59,7 +59,9 @@ export default function Phone({ initial }: { initial?: string }) {
     };
   }, [handset]);
 
-  useEffect(() => bottom.current?.scrollIntoView({ behavior: 'smooth' }), [messages.length]);
+  useEffect(() => {
+    bottom.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages.length]);
 
   const officeNumber = messages.length ? messages[messages.length - 1].brokerage_number : recent.find((h) => h.handset === handset)?.brokerage_number;
   const office = messages.find((m) => m.office)?.office;
